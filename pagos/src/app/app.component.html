@@ -64,7 +64,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let registro of registros">
+            <tr *ngFor="let registro of registros | filterRegistro:num_lote">
               <th>{{registro.num_lote}}</th>
               <th class="font-weight-light">{{registro.nom_archivo}}</th>
               <th class="font-weight-light">{{registro.fec_carga}}</th>
