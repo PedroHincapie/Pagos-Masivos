@@ -1,68 +1,85 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div id="container">
-  <div style="text-align:center" id="panel_carga_archivos">
-    <h1>
-      Welcome to {{ title }}!
-    </h1>
-    <button></button>
-    <button>Procesar</button>
-    <button>Cancelar</button>
+<div class="container">
+
+  <div class="row">
+    <div class="col-md">
+      <h1>
+        {{ title }}
+      </h1>
+    </div>
   </div>
-  <div style="text-align:left" id="panel_consulta">
-    <div style="text-align:left" id="panel_consulta">
+  <br />
+  <div class="row">
+    <div class="col-md">
+      <input type="file" />
+      <button>Procesar</button>
+      <button>Cancelar</button>
+    </div>
+  </div>
+
+  <br />
+
+  <div class="row">
+    <div class="col-md">
       <label>
         Nro Lote <input type="text" id="num_lote" />
       </label>
       <label>
         Fecha Carga <input type="text" id="num_lote" />
       </label>
+      <button>Consultar</button>
     </div>
-    <div style="text-align:center" id="panel_consulta">
-      <label>        
-        <button>Consultar</button>
-      </label>
-    </div>
-  </div>  
-  <div style="text-align:center" id="panel_resultado_consulta">
-    <div class="divTable blueTable">
-      <div class="divTableHeading">
-        <div class="divTableRow">
-          <div class="divTableHead">Nro Lote</div>
-          <div class="divTableHead">Nombre Archivo</div>
-          <div class="divTableHead">Fecha Carga</div>
-          <div class="divTableHead">Total</div>
-          <div class="divTableHead">Pendientes</div>
-          <div class="divTableHead">Pagados</div>
-          <div class="divTableHead">Error</div>
-          <div class="divTableHead">Exportar</div>
-        </div>
-      </div>
-      <div class="divTableBody">
-        <div class="divTableRow">
-          <div class="divTableCell">cell1_1</div>
-          <div class="divTableCell">cell2_1</div>
-          <div class="divTableCell">cell3_1</div>
-          <div class="divTableCell">cell4_1</div>
-          <div class="divTableCell">cell1_1</div>
-          <div class="divTableCell">cell2_1</div>
-          <div class="divTableCell">cell3_1</div>
-          <div class="divTableCell">cell4_1</div>
-        </div>
-        <div class="divTableRow">
-          <div class="divTableCell">cell1_1</div>
-          <div class="divTableCell">cell2_1</div>
-          <div class="divTableCell">cell3_1</div>
-          <div class="divTableCell">cell4_1</div>
-          <div class="divTableCell">cell1_1</div>
-          <div class="divTableCell">cell2_1</div>
-          <div class="divTableCell">cell3_1</div>
-          <div class="divTableCell">cell4_1</div>
-        </div>
-      </div>
-    </div>
-    <div class="blueTable outerTableFooter">
-      <div class="tableFootStyle">
-        <div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-md">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Nro Lote</th>
+              <th scope="col">Nombre Archivo</th>
+              <th scope="col">Fecha Carga</th>
+              <th scope="col">Total</th>
+              <th scope="col">Pendientes</th>
+              <th scope="col">Pagados</th>
+              <th scope="col">Error</th>
+              <th scope="col">Exportar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <th>1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
