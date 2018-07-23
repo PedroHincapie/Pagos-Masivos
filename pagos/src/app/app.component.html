@@ -12,20 +12,20 @@
 
   <div class="row">
     <div class="col-md">
-      <form>
-        <div class="form-row">
-          <div class="col-7">
-            <input type="text" class="form-control" placeholder="Seleccion Archivo">
-            <button type="button" class="btn btn-primary">Cargar Archivo</button>
-          </div>
-          <div class="col-2">
-            <button type="button" class="btn btn-success">Procesar</button>
-          </div>
-          <div class="col-2">
-            <button type="button" class="btn btn-danger">Cancelar</button>
-          </div>
+
+      <div class="form-row">
+        <div class="custom-file col-6 ">
+          <input type="file" class="custom-file-input" id="inputGroupFile02">
+          <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Seleccione Archivo</label>
         </div>
-      </form>
+        <div class="col-2">
+          <button type="button" class="btn btn-success">Procesar</button>
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn btn-danger">Cancelar</button>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -36,9 +36,8 @@
       <div class="form-group">
         <input type="text" class="form-control" placeholder="Nro Lote" [(ngModel)]="num_lote">
       </div>
-
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Fecha Carga">
+        <input type="date" class="form-control" [(ngModel)]="fecha_carga">
       </div>
 
       <div class="form-group">
