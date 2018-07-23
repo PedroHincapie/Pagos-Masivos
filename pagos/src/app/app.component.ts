@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Pagos Masivos';
-  num_lote = 1;
+  fecha_carga = '';
+  num_lote = '';
   registros = [
     {
       "num_lote": 1,
@@ -16,7 +17,7 @@ export class AppComponent {
       "num_total": 500,
       "num_pendientes": 200,
       "num_pagados": 200,
-      "num_errores" : 100
+      "num_errores": 100
     },
     {
       "num_lote": 2,
