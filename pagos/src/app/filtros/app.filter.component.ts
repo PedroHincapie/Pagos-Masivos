@@ -4,7 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'filterRegistro',
   pure: false
 })
-export class AppFilter implements PipeTransform {
+export class AppFilterComponent implements PipeTransform {
   transform(registros: any[], filter: Object): any {
     if (!registros || !filter) {
       return registros;
